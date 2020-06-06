@@ -1,6 +1,6 @@
 <?php
-if(isset($_POST['business_name'])) {
-    $business_name = $_POST['business_name'];
+if(isset($_GET['business_name'])) {
+    $business_name = $_GET['business_name'];
 }
 // # Create Invoice Sample
 // This sample code demonstrate how you can create
