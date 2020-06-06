@@ -22,7 +22,7 @@ try {
 }
 
 // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
- ResultPrinter::printResult("Send Invoice", "Invoice", $invoice->getId(), null, null);
+ //ResultPrinter::printResult("Send Invoice", "Invoice", $invoice->getId(), null, null);
 
 // ### Retrieve Invoice
 // Retrieve the invoice object by calling the
@@ -39,6 +39,7 @@ try {
 }
 
 // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
- ResultPrinter::printResult("Get Invoice (Not Required - For Sample Only)", "Invoice", $invoice->getId(), $invoice->getId(), $invoice);
-
+ //ResultPrinter::printResult("Get Invoice (Not Required - For Sample Only)", "Invoice", $invoice->getId(), $invoice->getId(), $invoice);
+ $invoiceid= $invoice->getId();
+ echo '<a href="https://www.sandbox.paypal.com/invoice/payerView/details/'.$invoiceid.'"><button>CLICK TO PAY</button></a>';
 return $invoice;

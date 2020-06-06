@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paynow Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="col-lg-12">
+	<h1>Fill Form</h1>
+		<form method="post" action="/Paypal-PHP-SDK/sample/invoice/SendInvoice.php">
+			<input type="text" name="customer_email" placeholder="Customer Email" value="" class="form-control"><br>
+			<input type="text" name="customer_name" placeholder="Customer Name" value="" class="form-control"><br>
+			<input type="hidden" name="business_name" placeholder="Business Name" value="Yusuf Niyala" class="form-control"><br>
+			<input type="text" name="customer_service" placeholder="Service Name" value="" class="form-control"><br>
+			<input type="text" name="customer_service_qty" placeholder="Service Name" value="1" class="form-control"><br>
+			<input type="text" name="customer_amount" placeholder="Amount" value="" class="form-control"><br>
+			<input type="text" name="customer_currency" placeholder="USD" value="USD" class="form-control"><br>
+			<input type="text" name="customer_tax_name" placeholder="Tax Name" value="" class="form-control"><br>
+			<input type="text" name="invoice_term" placeholder="Tax Name" value="NET_45" class="form-control"><br>
+			<input type="number" name="customer_tax" placeholder="Local Tax (In Percentage)" value="" class="form-control"><br>
+			<input type="number" name="customer_discount" placeholder="Discount (In Percentage)" value="" class="form-control"><br>
+			<input type="submit" class="btn btn-primary">
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
